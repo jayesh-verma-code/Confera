@@ -235,6 +235,8 @@ app.use("/api/v1/users", userRoutes);
 ```
 
 ## Sockets for live interection
+Follow the link to first understand how socket.io work by creating a basic real-time chat applicaiton in node. [socket.io](https://socket.io/docs/v4/tutorial/introduction)
+
 controllers sockerManager.js
 ```js
 
