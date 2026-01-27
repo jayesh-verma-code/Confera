@@ -236,16 +236,16 @@ app.use("/api/v1/users", userRoutes);
 
 ## Sockets for live interection
 Follow the link to first understand how socket.io work by creating a basic real-time chat applicaiton in node. [socket.io](https://socket.io/docs/v4/tutorial/introduction)
-```js {3-4, 9-13}
+```diff 
 import express from 'express';
 import { createServer } from 'node:http';
-import { fileURLToPath } from 'node:url';
-import { dirname, join } from 'node:path';
++ import { fileURLToPath } from 'node:url';
++ import { dirname, join } from 'node:path';
 
-const app = express();
-const server = createServer(app);
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
++const app = express();
++const server = createServer(app);
++
++const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.get('/', (req, res) => {
   res.sendFile(join(__dirname, 'index.html'));
